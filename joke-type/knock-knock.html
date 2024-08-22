@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dad Joke Generator</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div>
+
+        <section>
+            <nav>
+                <ul class="home-nav">
+                    <li class="nav-item">
+                        <a href="#">Jokes</a>
+                        <ul class="dropdown">
+                            <li><a href="dad-jokes.html">Dad Jokes</a></li>
+                            <li><a href="dark-humor.html">Dark Humor</a></li>
+                            <li><a href="one-liners.html">One-Liners</a></li>
+                            <li><a href="sarcastic.html">Sarcastic</a></li>
+                        </ul>
+                    </li>
+                    <li id="generate-random-joke-page">Random Joke</li>
+                    <input type="text" placeholder="Search jokes...">
+                    <button>Search</button>
+                </ul>
+            </nav>
+        </section>
+
+        <section>
+            <main class="center">
+                <div class="joke-types">
+                    <button><a href="../index.html">All Jokes</a></button>
+                    <button><a href="dad-jokes.html">Knock-Knock</a></button>
+                    <button><a href="dark-humor.html">Dark Humor</a></button>                    
+                    <button><a href="one-liners.html">One-Liners</a></button>
+                    <button><a href="sarcastic.html">Sarcastic</a></button>
+                </div>
+                <h1 class="main">Knock-Knock Jokes</h1>
+            </main>
+        </section>
+
+        <section class="joke-row">
+            <div class="joke-column">
+                <div class="help">
+                    <p class="explain-joke">Explain this joke</p>
+                <p class="help-button">&nbsp?&nbsp</p>
+                </div>
+                <div class="joke-area">
+                    <p id="joke-paragraph"></p>
+                </div>
+                <div class="clipboard">
+                    <img src="../img/clipboard-btn.webp" alt="button to copy to clipboard" class="clipboard-btn">
+                </div>
+            </div>
+            
+        </section>
+    </div>
+
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

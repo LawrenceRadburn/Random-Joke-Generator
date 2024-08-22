@@ -1,0 +1,73 @@
+<!--
+    *** Developed by: Lawrence Radburn ***
+    ***   https://lawrenceradburn.dev  ***
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Central</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="full-view-container">
+
+        <section>
+            <nav>
+                <ul class="home-nav">
+                    <li class="nav-item">
+                        <a href="#">Jokes</a>
+                        <ul class="dropdown">
+                            <li><a href="jokes/dad-jokes.html">Dad Jokes</a></li>
+                            <li><a href="jokes/dark-humor.html">Dark Humor</a></li>
+                            <li><a href="jokes/knock-knock.html">Knock-Knock</a></li>
+                            <li><a href="jokes/one-liners.html">One-Liners</a></li>
+                            <li><a href="jokes/sarcastic.html">Sarcastic</a></li>
+                        </ul>
+                    </li>
+                    <li id="generate-random-joke-page">Random Joke</li>
+                    <input type="text" placeholder="Search jokes...">
+                    <button>Search</button>
+                </ul>
+            </nav>
+        </section>
+
+        <section>
+            <main class="center">
+                <div class="joke-types">
+                    <button><a href="joke-type/dad-jokes.html">Dad Jokes</a></button>
+                    <button><a href="jokes-type/dark-humor.html">Dark Humor</a></button>
+                    <button><a href="jokes-type/knock-knock.html">Knock-Knock</a></button>
+                    <button><a href="jokes-type/one-liners.html">One-Liners</a></button>
+                    <button><a href="jokes-type/sarcastic.html">Sarcastic</a></button>
+                </div>
+                <h1 class="main">Stay a While <br> and Laugh</h1>
+            </main>
+        </section>
+
+        <section class="joke-row">
+            <div class="joke-column">
+                <div class="help">
+                    <p class="explain-joke">Explain this joke</p>
+                <p class="help-button">&nbsp?&nbsp</p>
+                </div>
+                <div class="joke-area">
+                    <p id="joke-paragraph"></p>
+                </div>
+                <div class="clipboard">
+                    <img src="img/clipboard-btn.webp" alt="button to copy to clipboard" class="clipboard-btn">
+                </div>
+            </div>
+            
+        </section>
+        
+    </div>
+
+    <!-- Container for dynamically loaded content -->
+    <div id="content-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
