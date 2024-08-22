@@ -278,3 +278,51 @@ button {
 #generate-random-joke-page:hover {
     opacity: .6;
 }
+
+@media only screen and (max-width: 600px) {
+    nav {
+        max-width: 90vw;
+    }
+
+    .home-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home-nav input {
+        width: 80px;
+    }
+
+    .nav-item:first-child {
+        margin: 0 12px;
+    }
+
+    .joke-types button {
+        font-size: 0.75rem;
+        max-height: 3vh;
+        max-width: 20vw;
+    }
+
+    .main {
+        margin-top: 2vh;
+        font-size: 4rem;
+    }
+
+    .joke-column {
+        margin: 3vh 0 0 0;
+        width: 90vw;
+    }
+
+    .explanation-title {
+        font-size: 1.75rem;
+    }
+
+    .explanation {
+        width: 90vw;
+        font-size: 1.5rem;
+    }
+
+    #generate-random-joke-page {
+        margin: 0 12px;
+    }
+}
