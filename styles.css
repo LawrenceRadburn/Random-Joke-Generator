@@ -30,7 +30,6 @@ button {
     background-color: rgba(255, 255, 255, .6);
     color: black;
     box-shadow: 1px 1px 4px;
-    position: relative;
 }
 
 .home-nav li {
@@ -263,10 +262,6 @@ button {
     width: 25vw;
 }
 
-.new-content {
-    height: 100vh;
-}
-
 #full-view-container {
     height: 100vh;
 }
@@ -280,11 +275,13 @@ button {
 }
 
 @media only screen and (max-width: 600px) {
+
     nav {
         max-width: 90vw;
     }
 
     .home-nav {
+        width: 80%;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -297,15 +294,26 @@ button {
         margin: 0 12px;
     }
 
+    .joke-types {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .joke-types button {
-        font-size: 0.75rem;
-        max-height: 3vh;
+        font-size: 15px;
+        max-height: 6vh;
         max-width: 20vw;
+    }
+
+    .center {
+        margin-top: -20px;
     }
 
     .main {
         margin-top: 2vh;
-        font-size: 4rem;
+        font-size: 36px;
     }
 
     .joke-column {
@@ -322,7 +330,59 @@ button {
         font-size: 1.5rem;
     }
 
+    .definition h1 {
+        margin-top: 50px;
+        font-size: 26px;
+    }
+
+    .answer {
+        margin: 80px;
+        font-size: 22px;
+    }
+
+    .explanation-title {
+        font-size: 20px;
+    }
+
+    .explanation {
+        font-size: 18px;
+    }
+
     #generate-random-joke-page {
         margin: 0 12px;
+    }
+
+    #joke-paragraph {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 602px) and (max-width: 1008px) {
+    .home-nav {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home-nav input,
+    .home-nav button {
+        margin-top: 10px;
+    }
+    
+    .main {
+        font-size: 54px;
+    }
+
+    .joke-column p {
+        font-size: 16px;
+    }
+
+    .clipboard img {
+        width: 16px;
+    }
+
+    #joke-paragraph {
+        font-size: 22px;
     }
 }

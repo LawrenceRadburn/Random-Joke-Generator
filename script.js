@@ -152,13 +152,11 @@ document.addEventListener('DOMContentLoaded', () => {
             newContent.innerHTML = html;
             contentContainer.appendChild(newContent);
 
-            newContent.style.height = '100vh';
-
             // Hide the <nav> element within the new content
 
             const navElements = newContent.querySelectorAll('nav')
             navElements.forEach(nav => {
-                nav.style.display = 'none';
+                nav.remove();
             });
 
 
